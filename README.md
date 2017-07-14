@@ -1,5 +1,4 @@
-# sort[排序算法]  
----  
+# sort[排序算法]   
 ## 1.冒泡排序：  
 ```
 function sort(arrInput){
