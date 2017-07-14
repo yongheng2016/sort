@@ -54,5 +54,21 @@ console.log(sort([4,6,2,7,1,100,78]))
 ```
 ## 3.插入排序[insert]:
 ```
-
+// 插入排序 从下标1开始每增1项排序一次，越往后遍历次数越多
+function sort1(array) {
+  var newArr = array.slice(0)
+  var len = array.length
+  var transit, j
+  for (var i=1; i<len; i++){
+      transit = newArr[i]  //  待插入的值
+      j = i-1  //右侧开始数值
+    while (j>=0 && transit<newArr[j]){  //比较两个值的大小，如果待插入  的值小于数组中的值，将数组中的值位置前移
+      newArr[j+1] = newArr[j]
+      j--  //  不断向左比较数组中的值
+    }
+    newArr[j+1] = transit  //确定下最终的位置后插入空缺newArr[j=1]的值
+  }
+  return newArr
+}
+console.log(sort1([3,5,7,1,45,34,20]))
 ```
