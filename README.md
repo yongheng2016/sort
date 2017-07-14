@@ -29,7 +29,7 @@ function sort(arrInput){
 console.log(sort([4,7,3,9,1,12,74,34,5,78]))
 ```
 
-## 2.选择排序[selection]
+## 2.选择排序[selection]:
 ```
   function sort(arr){
     var newArr = arr.slice(0)
@@ -51,4 +51,8 @@ console.log(sort([4,7,3,9,1,12,74,34,5,78]))
     return newArr 
   }
 console.log(sort([4,6,2,7,1,100,78]))
+```
+## 3.插入排序[insert]:
+```
+
 ```
