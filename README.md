@@ -28,3 +28,8 @@ function sort(arrInput){
     }
 console.log(sort([4,7,3,9,1,12,74,34,5,78]))
 ```
+
+## 选择排序[selection]
+```
+
+```
