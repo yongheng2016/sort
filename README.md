@@ -1,5 +1,5 @@
 # sort[排序算法]   
-## [排序算法演示](https://visualgo.net/en/sorting)  
+## [排序算法动画演示](https://visualgo.net/en/sorting)  
 ## 1.冒泡排序：  
 ```
 function sort(arrInput){
