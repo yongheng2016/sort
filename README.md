@@ -31,5 +31,24 @@ console.log(sort([4,7,3,9,1,12,74,34,5,78]))
 
 ## 2.选择排序[selection]
 ```
-
+  function sort(arr){
+    var newArr = arr.slice(0)
+    var len = newArr.length,
+              k, transit
+    for (var i=0; i<len-1; i++){
+      k = i  // 每次循环开始指定循环的第一个变量为最小值
+      for (var j=i+1; j<len; j++){
+        if (newArr[j]<newArr[k]){
+          k = j   // 当后面的数小于指定的最小值时，记录下它的位置k
+        }
+      }
+      if (i!==k){  // 进行数值交换
+        transit = newArr[k]
+        newArr[k] = newArr[i]
+        newArr[i] = transit
+      }
+    }
+    return newArr 
+  }
+console.log(sort([4,6,2,7,1,100,78]))
 ```
