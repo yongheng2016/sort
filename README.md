@@ -79,8 +79,49 @@ function sort1(array) {
 }
 console.log(sort1([3,5,7,1,45,34,20]))
 ```
-## 4.归并排序[merge]
+## 4.归并排序[merge]  
+left --> right (从单个数值，到多个数组都执行这个顺序)
 
 ```
+    var arr = [3,62,23,45,6,10,15,8]
+    function sort(arr){
 
+      var result = arr.slice()
+
+      // 递归分组比较
+      function subgroup(arr){
+        var len = arr.length
+        var mid = Math.floor(len*0.5)
+        var left = arr.slice(0,mid)
+        var right = arr.slice(mid)
+        if (len===1){
+          return arr
+        }
+        return merge(subgroup(left), subgroup(right))
+      }
+
+      // 比较插入
+      function merge(left, right){
+        var result = []
+        while(left.length || right.length){
+          if (left.length  && right.length){
+            if (left[0]<right[0]){
+              result.push(left.shift())
+            }else{
+              result.push(right.shift())
+            }
+          }else if(left.length){
+              result.push(left.shift())
+          }else{
+            result.push(right.shift())
+          }
+        }
+        return result
+      }
+
+      return subgroup(result)
+    }
+
+
+console.log(sort(arr))
 ```
