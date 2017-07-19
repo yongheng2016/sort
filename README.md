@@ -1,6 +1,7 @@
 # sort[排序算法]   
 ## [排序算法动画演示](https://visualgo.net/en/sorting)  
-## 1.冒泡排序[bubble]：  
+## 1.冒泡排序[bubble]：    
+两两比较，大者后放
 ```
 function sort(arrInput){
 
@@ -30,6 +31,7 @@ console.log(sort([4,7,3,9,1,12,74,34,5,78]))
 ```
 
 ## 2.选择排序[selection]:
+一多比较，交换位置
 ```
   function sort(arr){
     var newArr = arr.slice(0)
@@ -52,7 +54,8 @@ console.log(sort([4,7,3,9,1,12,74,34,5,78]))
   }
 console.log(sort([4,6,2,7,1,100,78]))
 ```
-## 3.插入排序[insert]:
+## 3.插入排序[insert]:   
+从第一个数字为一个数组（插入的时候已排好序），后面依次比较插入的合适的位置
 ```
 // 插入排序 从下标1开始每增1项排序一次，越往后遍历次数越多
 function sort1(array) {
@@ -71,4 +74,9 @@ function sort1(array) {
   return newArr
 }
 console.log(sort1([3,5,7,1,45,34,20]))
+```
+## 4.归并排序[merge]
+
+```
+
 ```
