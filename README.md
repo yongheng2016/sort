@@ -1,5 +1,9 @@
 # sort[排序算法]   
 ## [排序算法动画演示](https://visualgo.net/en/sorting)  
+
+[简](http://www.jianshu.com/p/7e6589306a27)
+[知](https://zhuanlan.zhihu.com/p/27095748)
+
 ## 1.冒泡排序[bubble]：    
 两两比较，大者后放
 ```
