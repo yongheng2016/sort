@@ -35,7 +35,7 @@ console.log(sort([4,7,3,9,1,12,74,34,5,78]))
 ```
 
 ## 2.选择排序[selection]:
-一多比较，交换位置
+一多比较，一轮过后选出最小值，放在第一位置
 ```
   function sort(arr){
     var newArr = arr.slice(0)
