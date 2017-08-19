@@ -6,7 +6,7 @@
 
 ## 1.冒泡排序[bubble]：    
 两两比较，大者后放
-```
+```js
 function sort(arrInput){
 
       var arrOutput = arrInput.splice(0),
@@ -36,7 +36,7 @@ console.log(sort([4,7,3,9,1,12,74,34,5,78]))
 
 ## 2.选择排序[selection]:
 一多比较，一轮过后选出最小值，放在第一位置
-```
+```js
   function sort(arr){
     var newArr = arr.slice(0)
     var len = newArr.length,
@@ -61,7 +61,7 @@ console.log(sort([4,6,2,7,1,100,78]))
 ## 3.插入排序[insert]:   
 后面的数字依次拿出来和前面的数组比较，放在顺序位置上；
 从第一个数字为一个数组（插入的时候已排好序），后面依次比较插入的合适的位置
-```
+```js
 // 插入排序 从下标1开始每增1项排序一次，越往后遍历次数越多
 function sort1(array) {
   var newArr = array.slice(0)
@@ -83,7 +83,7 @@ console.log(sort1([3,5,7,1,45,34,20]))
 ## 4.归并排序[merge]  
 left --> right (从单个数值，到多个数组都执行这个顺序)
 
-```
+```js
     var arr = [3,62,23,45,6,10,15,8]
     function sort(arr){
 
