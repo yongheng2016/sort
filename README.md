@@ -8,8 +8,7 @@
 两两比较，大者后放
 ```js
 function sort(arrInput){
-
-      var arrOutput = arrInput.splice(0),
+      var arrOutput = arrInput.splice(0),
           len = arrOutput.length,
           exchange,
           transit;
